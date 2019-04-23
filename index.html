@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="header">
+    <h1>User Panel</h1>
+   </div>
+    <link rel=stylesheet type="text/css" href="style.css"></style>
+  </head>
+  <body>
+    <form>
+    <div class='upper_container' id='upper_container' style="margin-top: 43px;"> 
+      <div class='u_name'>
+        <label class="bla" style="margin-right:33px;">Name</label> <input type="text" style="margin-left: 6px;" placeholder="name" class="inp" id='name' onkeyup="display_name()" required></input> 
+      </div>
+
+      <div class='u_phone'>
+        <label class="bla" style="margin-right:10px;">Phone No.</label> 
+        <input type="text" id='phone' placeholder="phone number" onkeyup="display_phone()" required></input> 
+      </div>
+      <div class="highlight">
+        <span style="text-decoration: underline;">User Details</span>
+        <div><label style="margin-right:40px;">Name</label><span class='showthing' id='show_name'></span></div></br></br>
+        <div><label style="margin-right:10px;">Phone No.</label><span class='showthing' id='show_phone'></span></div>
+      </div>
+   
+    </div>
+
+    <div class="ad_btn">
+      <button type="submit" onclick="add()" value="1">Add User </button> 
+    </div>
+  </form>
+    <div class="user_container" id="cont">
+     <table id="content" class="usr_dtl"> 
+     <th>
+      Name
+     </th> 
+     <th>
+      Phone No.
+     </th>
+     <th>
+      Delete User
+     </th>
+     </table>
+    </div>
+  
+  </body>
+<script src="style.js"></script>
+</html>
